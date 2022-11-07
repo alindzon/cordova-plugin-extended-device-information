@@ -1,8 +1,9 @@
-var argscheck = require('cordova/argscheck'),
-    channel = require('cordova/channel'),
-    utils = require('cordova/utils'),
-    exec = require('cordova/exec'),
-    cordova = require('cordova');
+var cordova = require('cordova');
+var argscheck = cordova.require('cordova/argscheck'),
+    channel = cordova.require('cordova/channel'),
+    utils = cordova.require('cordova/utils'),
+    exec = cordova.require('cordova/exec'),
+    
 
 channel.createSticky('onCordovaInformationReady');
 channel.waitForInitialization('onCordovaInformationReady');
